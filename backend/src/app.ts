@@ -56,11 +56,11 @@ app.use("/api/v1/payment",paymentRoutes)
 app.use("/api/v1/dashboard",dashboardRoutes)
 
 
-app.use(express.static(path.join(__dirname,"../../frontend/dist")));
+// app.use(express.static(path.join(__dirname,"../../frontend/dist")));
 
-app.get("*",(req,res)=>{
-    res.sendFile(path.resolve(__dirname,"../../frontend/dist/index.html"));
-});
+// app.get("*",(req,res)=>{
+//     res.sendFile(path.resolve(__dirname,"../../frontend/dist/index.html"));
+// });
 
 
 
